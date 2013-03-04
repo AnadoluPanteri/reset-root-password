@@ -1,0 +1,27 @@
+
+                              reset-root-password
+              Reset a forgotten root password on MeeGo Harmattan
+              ==================================================
+
+To use, copy "reset-root-password_1.0.0_all.deb" to the MyDocs partition:
+
+    scp reset-root-password_1.0.0_all.deb user@n9:MyDocs/
+
+Alternatively, copy the file to the device using USB Mass Storage mode.
+
+Then, open a shell as "user" and install the package via:
+
+    xdg-open /home/user/MyDocs/reset-root-password_1.0.0_all.deb
+
+If you don't have access to the "user"'s shell for some reason, simply wait
+a bit after disconnecting USB Mass Storage, and the .deb package should
+appear in the "Search" utility when you search for it. Install it from there.
+
+After installation, use "devel-su" to get root, and then use "passwd" to change
+the password. Use "dpkg --remove reset-root-password" to remove this package
+after your root password is reset.
+
+
+    Website: http://thp.io/2012/maemo/
+    2012-05-14 Thomas Perl <m@thp.io>
+

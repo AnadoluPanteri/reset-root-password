@@ -1,0 +1,5 @@
+reset-root-password (1.0.0) harmattan; urgency=low
+
+  * Initial Release.
+
+ -- Thomas Perl <m@thp.io>  Mon, 14 May 2012 19:32:13 +0200

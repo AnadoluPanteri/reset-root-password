@@ -1,0 +1,17 @@
+Source: reset-root-password
+Section: user/desktop
+Priority: extra
+Maintainer: Thomas Perl <m@thp.io>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.2
+Homepage: http://thp.io/2012/maemo/
+
+Package: reset-root-password
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Setting root password to an empty password
+ After installation, use "devel-su" to get root, and
+ then use "passwd" to change the password.
+ .
+ Use "dpkg --remove reset-root-password" to remove this
+ package after your root password is reset.

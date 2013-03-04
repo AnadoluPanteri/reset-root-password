@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# trololol - thanks to merlin1991 for the suggestion
+passwd -d root
+
